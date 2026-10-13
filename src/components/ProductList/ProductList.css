@@ -1,0 +1,23 @@
+
+.product-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.list-title {
+  text-align: center;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+/* Карточкаларды катар-катар кылып жайгаштыруучу Grid */
+.product-grid {
+ display: flex;
+ flex-wrap: wrap;
+  gap: 30px; /* Карточкалардын ортосундагы аралык */
+  justify-content: center;
+}

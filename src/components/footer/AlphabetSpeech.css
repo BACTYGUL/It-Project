@@ -1,0 +1,55 @@
+/* Башкы контейнер (кара фон, ортолоштурулган) */
+.alphabet-container {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.alphabet-title {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* Тамгалардын тизмеги сапка оройт (Flexbox) */
+.alphabet-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Ар бир тамганын баскычы (көгүлтүр/сары түстөгү текст) */
+.letter-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.letter-btn {
+  background: transparent;
+  border: none;
+  color: #ff5722; /* Сүрөттөгүдөй оранжевый/сары түс */
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2px 4px;
+  transition: color 0.2s, transform 0.1s;
+}
+
+.letter-btn:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Тамгалардын ортосундагы бөлгүч (Слэш '/') */
+.separator {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 1px;
+}

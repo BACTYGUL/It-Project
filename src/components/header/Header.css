@@ -1,0 +1,128 @@
+/* Жалпы контейнер */
+
+
+/* Навигация бөлүгү */
+.meal-header {
+  background-color: #2d2013; /* TheMealDB стилиндеги кочкул-күрөң фон */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  background-color: #a72d2d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Негизги hero бөлүмү */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content h3 {
+  font-weight: normal;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #d35400;
+  font-weight: bold;
+}
+
+.highlight-price {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+/* Баскычтар */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-free {
+  background-color: #34495e;
+  color: white;
+}
+
+.btn-premium {
+  background-color: #27ae60;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #bbb;
+}
+
+/* Капталдагы сүрөттөр */
+.side-icon img {
+  width: 120px;
+  height: auto;
+  opacity: 0.8;
+}
+
+/* Мобилдик адаптация */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  
+  .side-icon {
+    display: none; /* Кичине экранда капталдагы сүрөттөр жашырылат */
+  }
+}
